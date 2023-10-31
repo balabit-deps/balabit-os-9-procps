@@ -8,3 +8,4 @@ ignore_erofs.patch
 ps_checks
 pwait_rename
 test_proc_siginfo
+CVE-2023-4016.patch

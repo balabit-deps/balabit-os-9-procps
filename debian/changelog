@@ -1,3 +1,13 @@
+procps (2:3.3.17-6ubuntu2.1) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: heap-based buffer overflow
+    - debian/patches/CVE-2023-4016: replace the use of malloc() with calloc()
+      in ps/parser.c to prevent the potential for an arithmetic overflow when
+      allocating memory.
+    - CVE-2023-4016
+
+ -- Ian Constantin <ian.constantin@canonical.com>  Tue, 31 Oct 2023 13:36:04 +0200
+
 procps (2:3.3.17-6ubuntu2) jammy; urgency=medium
 
   * Add basic autopkgtest to validate sysctl-defaults (LP: #1962038)
